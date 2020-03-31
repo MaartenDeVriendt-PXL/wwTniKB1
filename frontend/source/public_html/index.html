@@ -12,7 +12,7 @@
 
                 <div class="form">
                     <!-- register form -->
-                    <form class="register-form" id="formregister" onsubmit="return validateMyForm();">
+                    <form class="register-form" id="formregister" onsubmit="return validateReg();">
                         <input type="text" placeholder="username" id="user" required value="admin"/>
                         <input type="text" placeholder="email" id="emailregister" required value="nospam@spam.be"/>
                         <input type="password" placeholder="password" id="passregister" required/>
@@ -23,7 +23,7 @@
                     </form>
 
                     <!-- login form -->
-                    <form class="login-form" id="formlogin">
+                    <form class="login-form" id="formlogin" onsubmit="return validateLog();">
                         <h2>login</h2><br>
                         <input type="text" name="email" placeholder="email" id="login_email" required/>
                         <input type="password" name="password" placeholder="password" id="login_password" required/>
