@@ -1,45 +1,63 @@
-function toggleRegister() {
-    document.getElementById("login").style.display = "none";
-    document.getElementById("register").style.display = "block";
-}
+window.onload = function () {
+    //toggles between login and register form
+    let toggle_register = document.getElementById("toggleform");
+    let toggle_login = document.getElementById("togglelogin");
 
-function toggleLogin() {
-    document.getElementById("register").style.display = "none";
-    document.getElementById("login").style.display = "block";
-}
+    toggle_register.addEventListener("click", () => {
+        document.getElementById("formlogin").style.display = "none";
+        document.getElementById("formregister").style.display = "block";
+    });
 
-function check() {
-    let password = document.getElementById("pass").value;
-    let confpass = document.getElementById("confpass").value;
+    toggle_login.addEventListener("click", () => {
+        document.getElementById("formlogin").style.display = "block";
+        document.getElementById("formregister").style.display = "none";
+    });
+    //end
 
-    if (password.length <= 6) {
+    //load cookie
+    if (getCookie("email") !== null || getCookie("email") !== "") {
+        document.getElementById("login_email").value = getCookie("email");
+    }
+};
+
+function validateMyForm() {
+    //get var
+    let email = document.getElementById("emailregister").value;
+
+    //check password length and conf 
+    let password = document.getElementById("passregister").value;
+    let confpassword = document.getElementById("confpass").value;
+
+    if (password.length < 6) {
         document.getElementById("error").innerHTML = "Provided password is too short!";
+        return false;
     }
 
-    if (password != confpass) {
+    if (password !== confpassword) {
         document.getElementById("error").innerHTML = "Passwords do not match";
+        return false;
     }
-
-    if (password.length >= 6 && password == confpass) {
-        document.getElementById("register").style.display = "none";
-        document.getElementById("login").style.display = "block";
-        document.getElementById("confirmation").innerHTML = "Registration was succesfull";
-    }
+    document.cookie = `email=${email}`;
+    return true;
 }
 
+//work with cookie function
+function getCookie(name) {
+    // Split cookie string and get all individual name=value pairs in an array
+    var cookieArr = document.cookie.split(";");
 
-function ping() {
-    const uri = 'https://localhost:5001/ping';
+    // Loop through the array elements
+    for (var i = 0; i < cookieArr.length; i++) {
+        var cookiePair = cookieArr[i].split("=");
 
-    fetch(uri)
-            .then(response => {
-                return response.json()
-            })
-            .then(data => {
-                // Work with JSON data here
-                console.log(data);
-            })
-            .catch(err => {
-                // Do something for an error here
-            });
+        /* Removing whitespace at the beginning of the cookie name
+         and compare it with the given string */
+        if (name == cookiePair[0].trim()) {
+            // Decode the cookie value and return
+            return decodeURIComponent(cookiePair[1]);
+        }
+    }
+
+    // Return null if not found
+    return null;
 }

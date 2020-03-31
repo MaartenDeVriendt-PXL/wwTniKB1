@@ -2,36 +2,47 @@
 <html>
     <head>
         <title>Battleship</title>
-        <link rel="stylesheet" type="text/css" href="assets/loginStyle.css">
-        <script src="assets/script.js"></script>
+        <link href="assets/loginStyle.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/script.js" type="text/javascript"></script>
     </head>
 
     <body>
         <div class="container">
             <div class="menu">
+
                 <div class="form">
-                    <form class="register-form" id="register">
-                        <input type="text" placeholder="username" required/>
-                        <input type="text" placeholder="email" required/>
-                        <input type="password" placeholder="password" id="pass" required/>
+                    <!-- register form -->
+                    <form class="register-form" id="formregister" onsubmit="return validateMyForm();">
+                        <input type="text" placeholder="username" id="user" required value="admin"/>
+                        <input type="text" placeholder="email" id="emailregister" required value="nospam@spam.be"/>
+                        <input type="password" placeholder="password" id="passregister" required/>
                         <input type="password" placeholder="confirm password" id="confpass" required/>
-                        <button onclick="check(this)">create</button>
-                        <p class="message">Already registered? <a onclick="toggleLogin()">Sign In</a></p>
+                        <input type="submit" class="btn" value="create" />
+                        <p class="message">Already registered? <a id="togglelogin">Sign In</a></p>
                         <p class="error" id="error"></p>
                     </form>
 
-                    <form class="login-form" id="login">
-                        <input type="text" placeholder="email" required/>
-                        <input type="password" placeholder="password" required/>
-                        <button>login</button>
-                        <p class="message">Not registered? <a onclick="toggleRegister()">Create an account</a></p>
+                    <!-- login form -->
+                    <form class="login-form" id="formlogin">
+                        <h2>login</h2><br>
+                        <input type="text" name="email" placeholder="email" id="login_email" required/>
+                        <input type="password" name="password" placeholder="password" id="login_password" required/>
+                        <input type="submit" class="btn" id="login_btn" value="LOGIN" />
+                        <p class="message">Not registered? <a id="toggleform">Create an account</a></p>
                         <p class="confirmation" id="confirmation"></p>
                     </form>
                 </div>
             </div>
+
+            <!-- waves -->
+            <section>
+                <h2></h2>
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+                <div class="wave wave4"></div>
+            </section>
         </div>
-        
-        <button type="submit" onclick="ping()">ping rest api</button>
     </body>
 
 </html>
