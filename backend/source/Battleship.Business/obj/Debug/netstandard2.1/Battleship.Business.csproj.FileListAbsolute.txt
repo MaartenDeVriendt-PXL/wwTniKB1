@@ -11,3 +11,17 @@ C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Busines
 C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.csproj.CopyComplete
 C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.dll
 C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.pdb
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Business.deps.json
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Business.dll
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Business.pdb
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Business.xml
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Domain.dll
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Domain.pdb
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Domain.xml
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.csprojAssemblyReference.cache
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.csproj.CoreCompileInputs.cache
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.AssemblyInfoInputs.cache
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.AssemblyInfo.cs
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.csproj.CopyComplete
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.dll
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.pdb

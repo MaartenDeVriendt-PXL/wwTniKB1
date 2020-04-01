@@ -5,13 +5,38 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Battleship - Lobby</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="assets/lobby.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <div id="cookie"> TODO write content</div>
-    </body>
+
+<head>
+    <title>Battleship - Lobby</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/lobby.js" type="text/javascript"></script>
+    <link href="assets/lobbyStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h3>Sailors 71</h3>
+        </div>
+        <ul>
+            <li id="username"></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="form">
+            <form class="play-form" onsubmit="">
+                <input type="submit" class="btn" id="play_btn" value="START - Singleplayer" />
+            </form>
+            <form class="play-form" onsubmit="">
+                <input type="submit" class="btn" id="play_btn" value="START - Multiplayer" />
+            </form>
+            <form class="play-form" onsubmit="">
+                <input type="submit" class="btn" id="play_btn" value="START - Group" />
+            </form>
+        </div>
+    </div>
+</body>
+
 </html>

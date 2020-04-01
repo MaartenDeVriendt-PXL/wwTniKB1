@@ -10298,19 +10298,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Koen\\.nuget\\packages\\": {}
+    "C:\\Users\\maart\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Api\\Battleship.Api.csproj",
+      "projectUniqueName": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Api\\Battleship.Api.csproj",
       "projectName": "Battleship.Api",
-      "projectPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Api\\Battleship.Api.csproj",
-      "packagesPath": "C:\\Users\\Koen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Api\\obj\\",
+      "projectPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Api\\Battleship.Api.csproj",
+      "packagesPath": "C:\\Users\\maart\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Koen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maart\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10323,11 +10323,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Business\\Battleship.Business.csproj": {
-              "projectPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Business\\Battleship.Business.csproj"
+            "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Business\\Battleship.Business.csproj": {
+              "projectPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Business\\Battleship.Business.csproj"
             },
-            "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Data\\Battleship.Data.csproj": {
-              "projectPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Data\\Battleship.Data.csproj"
+            "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Data\\Battleship.Data.csproj": {
+              "projectPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Data\\Battleship.Data.csproj"
             }
           }
         }
@@ -10376,7 +10376,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -7,3 +7,13 @@ C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Domain\
 C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Domain\obj\Debug\netstandard2.1\Battleship.Domain.AssemblyInfo.cs
 C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Domain\obj\Debug\netstandard2.1\Battleship.Domain.dll
 C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Domain\obj\Debug\netstandard2.1\Battleship.Domain.pdb
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\bin\Debug\netstandard2.1\Battleship.Domain.deps.json
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\bin\Debug\netstandard2.1\Battleship.Domain.dll
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\bin\Debug\netstandard2.1\Battleship.Domain.pdb
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\bin\Debug\netstandard2.1\Battleship.Domain.xml
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\obj\Debug\netstandard2.1\Battleship.Domain.csprojAssemblyReference.cache
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\obj\Debug\netstandard2.1\Battleship.Domain.csproj.CoreCompileInputs.cache
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\obj\Debug\netstandard2.1\Battleship.Domain.AssemblyInfoInputs.cache
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\obj\Debug\netstandard2.1\Battleship.Domain.AssemblyInfo.cs
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\obj\Debug\netstandard2.1\Battleship.Domain.dll
+C:\Users\maart\Desktop\PXL\wwTniKB1\backend\source\Battleship.Domain\obj\Debug\netstandard2.1\Battleship.Domain.pdb

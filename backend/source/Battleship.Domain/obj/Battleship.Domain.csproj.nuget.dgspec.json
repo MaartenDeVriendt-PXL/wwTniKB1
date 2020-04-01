@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Domain\\Battleship.Domain.csproj": {}
+    "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Domain\\Battleship.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Domain\\Battleship.Domain.csproj": {
+    "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Domain\\Battleship.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Domain\\Battleship.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Domain\\Battleship.Domain.csproj",
         "projectName": "Battleship.Domain",
-        "projectPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Domain\\Battleship.Domain.csproj",
-        "packagesPath": "C:\\Users\\Koen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Domain\\obj\\",
+        "projectPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Domain\\Battleship.Domain.csproj",
+        "packagesPath": "C:\\Users\\maart\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Koen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maart\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8319,19 +8319,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Koen\\.nuget\\packages\\": {}
+    "C:\\Users\\maart\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Data.Tests\\Battleship.Data.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Data.Tests\\Battleship.Data.Tests.csproj",
       "projectName": "Battleship.Data.Tests",
-      "projectPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Data.Tests\\Battleship.Data.Tests.csproj",
-      "packagesPath": "C:\\Users\\Koen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Data.Tests\\obj\\",
+      "projectPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Data.Tests\\Battleship.Data.Tests.csproj",
+      "packagesPath": "C:\\Users\\maart\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Data.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Koen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maart\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8344,11 +8344,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Data\\Battleship.Data.csproj": {
-              "projectPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.Data\\Battleship.Data.csproj"
+            "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Data\\Battleship.Data.csproj": {
+              "projectPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.Data\\Battleship.Data.csproj"
             },
-            "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.TestTools\\Battleship.TestTools.csproj": {
-              "projectPath": "C:\\Users\\Koen\\Documents\\PXL\\project\\battleship\\Backend\\Source\\Battleship.TestTools\\Battleship.TestTools.csproj"
+            "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.TestTools\\Battleship.TestTools.csproj": {
+              "projectPath": "C:\\Users\\maart\\Desktop\\PXL\\wwTniKB1\\backend\\source\\Battleship.TestTools\\Battleship.TestTools.csproj"
             }
           }
         }
@@ -8396,7 +8396,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

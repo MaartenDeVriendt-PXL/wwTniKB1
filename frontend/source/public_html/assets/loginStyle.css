@@ -55,8 +55,6 @@
     padding: 15px;
     color: #FFFFFF;
     font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
     cursor: pointer;
 }
 
@@ -85,21 +83,22 @@
 }
 
 .form .confirmation{
-    color: green;
+    color: red;
 }
 
+/* WAVES */
 section .wave {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 60px;
     background: url(../image/wave.png);
-    background-size: 1000px 100px;
+    background-size: 1000px 60px;
 }
 
 section .wave.wave1 {
-    animation: animate 30s linear infinite;
+    animation: animate 40s linear infinite;
     z-index: 1000;
     opacity: 1;
     animation-delay: 0s;
@@ -107,7 +106,7 @@ section .wave.wave1 {
 }
 
 section .wave.wave2 {
-    animation: animate2 15s linear infinite;
+    animation: animate2 25s linear infinite;
     z-index: 999;
     opacity: 0.5;
     animation-delay: -5s;
@@ -115,7 +114,7 @@ section .wave.wave2 {
 }
 
 section .wave.wave3 {
-    animation: animate3 15s linear infinite;
+    animation: animate3 25s linear infinite;
     z-index: 998;
     opacity: 0.2;
     animation-delay: -2s;
@@ -123,7 +122,7 @@ section .wave.wave3 {
 }
 
 section .wave.wave4 {
-    animation: animate3 5s linear infinite;
+    animation: animate3 15s linear infinite;
     z-index: 997;
     opacity: 0.7;
     animation-delay: -5s;

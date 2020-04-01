@@ -5,7 +5,9 @@
  */
 
 window.onload = function () {
-   document.getElementById("cookie").innerHTML = getCookie("email") + "\n" + getCookie("token") + "\n\n" + getCookie("user");
+//    document.getElementById("cookie").innerHTML = getCookie("email") + "\n" + getCookie("token") + "\n\n" + getCookie("user");
+   console.log("Logged in as: " + getCookie("user") +"\nEmail: " + getCookie("email") + "\ntoken: " + getCookie("token"));
+   document.getElementById("username").innerHTML = getCookie("user");
 };
 
 //work with cookie function
