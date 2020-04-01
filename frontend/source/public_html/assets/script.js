@@ -92,6 +92,7 @@ function validateLog() {
                 console.log(data); //delete me
 
                 //store values in cookies
+                document.cookie = `email=${email}`;
                 document.cookie = `token=${data["token"]}`;
                 location.href = "lobby.html";
             })

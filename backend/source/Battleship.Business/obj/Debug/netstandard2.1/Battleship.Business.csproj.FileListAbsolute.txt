@@ -1,0 +1,13 @@
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Business.deps.json
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Business.dll
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Business.pdb
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Business.xml
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Domain.dll
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Domain.pdb
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\bin\Debug\netstandard2.1\Battleship.Domain.xml
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.csprojAssemblyReference.cache
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.AssemblyInfoInputs.cache
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.AssemblyInfo.cs
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.csproj.CopyComplete
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.dll
+C:\Users\Koen\Documents\PXL\project\battleship\Backend\Source\Battleship.Business\obj\Debug\netstandard2.1\Battleship.Business.pdb
