@@ -5,7 +5,7 @@
  */
 
 window.onload = function () {
-   document.getElementById("cookie").innerHTML = getCookie("email") + "\n" + getCookie("token");
+   document.getElementById("cookie").innerHTML = getCookie("email") + "\n" + getCookie("token") + "\n\n" + getCookie("user");
 };
 
 //work with cookie function

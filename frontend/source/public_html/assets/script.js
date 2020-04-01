@@ -17,6 +17,67 @@ window.onload = function () {
         document.getElementById("login_email").value = getCookie("email");
     }
 };
+
+//login
+function validate_login(e) {
+    e.preventDefault();
+    try {
+        login();
+    } catch (e) {
+        throw new Error(e.message);
+    }
+    return false;
+}
+
+function login() {
+    //create & bind var
+    let email = document.getElementById("login_email").value;
+    let password = document.getElementById("login_password").value;
+
+    //bind var to data arr
+    const data = {email: email, password: password};
+
+    //request uri
+    const uri = 'https://localhost:5001/api/Authentication/token';
+
+    //make & check request code
+    fetch(uri, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+            .then(response => {
+                if (!response.ok) {
+                    document.getElementById("confirmation").innerHTML = `login error, password or email incorrect`;
+                    throw new Error('status code not 200');
+                    return false;
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+
+                //store values in cookies
+                document.cookie = `email=${email}`;
+                document.cookie = `token=${data["token"]}`;
+                document.cookie = `user=${data["player"]["nickName"]}`;
+
+                window.location.href = "lobby.html";
+            })
+            .catch(err => {
+                document.getElementById("error").innerHTML =
+                        `"Backend error, is the API running? \n" ${
+                        err.toString()}
+     `;
+                return false;
+            });
+    //should always be last
+    return false;
+}
+
+
 //registratie
 function validateReg() {
     //get var
@@ -37,6 +98,7 @@ function validateReg() {
 
     //bind var to cookie
     document.cookie = `email=${email}`;
+    document.cookie = `user=${user}`;
     //bind var to data arr
     const data = {email: email, password: password, nickName: user};
     //request uri
@@ -57,50 +119,7 @@ function validateReg() {
                 location.reload();
             })
             .catch(err => {
-                document.getElementById("error").innerHTML = `"Backend error, is the API running?"`; // \n ${err.toString()}
-                return false;
-            });
-    //should always be last
-    return false;
-}
-
-//login
-function validateLog() {
-//get var
-    let email = document.getElementById("login_email").value;
-    let password = document.getElementById("login_password").value;
-    //bind var to data arr
-    const data = {email: email, password: password};
-    //request uri
-    const uri = 'https://localhost:5001/api/Authentication/token';
-    //make & check request code
-    fetch(uri, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('status code not 200');
-                    document.getElementById("error").innerHTML = `login error, password or email incorrect`;
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log(data); //delete me
-
-                //store values in cookies
-                document.cookie = `email=${email}`;
-                document.cookie = `token=${data["token"]}`;
-                location.href = "lobby.html";
-            })
-            .catch(err => {
-                document.getElementById("error").innerHTML =
-                        `Backend error, is the API running?   ${
-                        err.toString()}
-                            `;
+                document.getElementById("error").innerHTML = `"Backend error, is the API running?" \n ${err.toString()}`; // \n ${err.toString()}
                 return false;
             });
     //should always be last

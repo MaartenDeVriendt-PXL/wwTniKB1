@@ -11,6 +11,16 @@
             <div class="menu">
 
                 <div class="form">
+                    <!-- login form -->
+                    <form class="login-form" id="formlogin" onsubmit="return validate_login(event);">
+                        <h2>login</h2><br>
+                        <input type="text" name="email" placeholder="email" id="login_email" required/>
+                        <input type="password" name="password" placeholder="password" id="login_password" required minlength="6"/>
+                        <input type="submit" class="btn" id="login_btn" value="LOGIN" />
+                        <p class="message">Not registered? <a id="toggleform">Create an account</a></p>
+                        <p class="confirmation" id="confirmation"></p>
+                    </form>
+
                     <!-- register form -->
                     <form class="register-form" id="formregister" onsubmit="return validateReg();">
                         <input type="text" placeholder="username" id="user" required value="admin"/>
@@ -20,16 +30,6 @@
                         <input type="submit" class="btn" value="create" />
                         <p class="message">Already registered? <a id="togglelogin">Sign In</a></p>
                         <p class="error" id="error"></p>
-                    </form>
-
-                    <!-- login form -->
-                    <form class="login-form" id="formlogin" onsubmit="return validateLog();">
-                        <h2>login</h2><br>
-                        <input type="text" name="email" placeholder="email" id="login_email" required/>
-                        <input type="password" name="password" placeholder="password" id="login_password" required/>
-                        <input type="submit" class="btn" id="login_btn" value="LOGIN" />
-                        <p class="message">Not registered? <a id="toggleform">Create an account</a></p>
-                        <p class="confirmation" id="confirmation"></p>
                     </form>
                 </div>
             </div>
