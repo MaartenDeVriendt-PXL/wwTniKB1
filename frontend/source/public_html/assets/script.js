@@ -57,7 +57,7 @@ function validateReg() {
                 location.reload();
             })
             .catch(err => {
-                document.getElementById("error").innerHTML = `Backend error, is the API running?   ${err.toString()}`;
+                document.getElementById("error").innerHTML = `"Backend error, is the API running?"`; // \n ${err.toString()}
                 return false;
             });
     //should always be last
