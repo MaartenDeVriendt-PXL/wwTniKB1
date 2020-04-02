@@ -28,7 +28,6 @@ function validate_login(e) {
     }
     return false;
 }
-
 function login() {
     //create & bind var
     let email = document.getElementById("login_email").value;
@@ -78,48 +77,65 @@ function login() {
 }
 
 
-//registratie
-function validateReg() {
-    //get var
+//registration
+function validate_signup(e) {
+    e.preventDefault();
+    try {
+        signup();
+    } catch (e) {
+        throw new Error(e.message);
+    }
+    return false;
+}
+function signup(){
+    //get & bind variable
     let email = document.getElementById("emailregister").value;
     let user = document.getElementById("user").value;
-    //check password length and conf 
+
+    //check password conf
     let password = document.getElementById("passregister").value;
     let confpassword = document.getElementById("confpass").value;
-    if (password.length < 6) {
-        document.getElementById("error").innerHTML = "Provided password is too short!";
-        return false;
-    }
 
     if (password !== confpassword) {
         document.getElementById("error").innerHTML = "Passwords do not match";
         return false;
     }
 
-    //bind var to cookie
-    document.cookie = `email=${email}`;
-    document.cookie = `user=${user}`;
     //bind var to data arr
     const data = {email: email, password: password, nickName: user};
+
     //request uri
     const uri = 'https://localhost:5001/api/Authentication/register';
+
     //make & check request code
     fetch(uri, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Accept': '*/*',
+            'Content-Type': 'application/json;charset=utf-8'
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
     })
             .then(response => {
-                return response.json();
+                if (!response.ok) {
+                    document.getElementById("error").innerHTML = `backend error, is the API running?`;
+                    throw new Error('status code not 200');
+                    return false;
+                }
+                //return response.json();
             })
             .then(data => {
-                console.log(data); //delete me 
+                //bind var to cookie
+                document.cookie = `email=${email}`;
+                document.cookie = `user=${user}`;
+
+                console.log('succes:', data);
+
                 location.reload();
             })
             .catch(err => {
-                document.getElementById("error").innerHTML = `"Backend error, is the API running?" \n ${err.toString()}`; // \n ${err.toString()}
+                console.log('Error:', err.toString());
+                document.getElementById("error").innerHTML = "Backend error, is the API running?"; // \n ${err.toString()}
                 return false;
             });
     //should always be last
