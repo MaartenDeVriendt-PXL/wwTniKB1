@@ -1,14 +1,34 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 window.onload = function () {
-//    document.getElementById("cookie").innerHTML = getCookie("email") + "\n" + getCookie("token") + "\n\n" + getCookie("user");
-   console.log("Logged in as: " + getCookie("user") +"\nEmail: " + getCookie("email") + "\ntoken: " + getCookie("token"));
-   document.getElementById("username").innerHTML = getCookie("user");
+    //check if user has key
+    if(sessionStorage.getItem('AuthenticationState') === null){
+        window.location.href = "accesdenied.html";
+    }
+    //check is key hasn't expired
+    else if (Date.now > new Date(sessionStorage.getItem('AuthenticationExpires'))) {
+        window.location.href = "accesdenied.html";
+    }
+
+    document.getElementById("username").innerHTML = getCookie("user");
 };
+
+function updateDifficulty() {
+    let sliderValue = document.getElementById("difficultySP-slider").value;
+
+    //change difficulty
+    switch (sliderValue) {
+        case "1":
+            document.getElementById("difficulty-display").innerHTML = "EASY";
+            break;
+        case "2":
+            document.getElementById("difficulty-display").innerHTML = "MEDIUM";
+            break;
+        case "3":
+            document.getElementById("difficulty-display").innerHTML = "HARD";
+            break;
+        default:
+            document.getElementById("difficulty-display").innerHTML = "EASY";
+    }
+}
 
 //work with cookie function
 function getCookie(name) {
@@ -27,23 +47,4 @@ function getCookie(name) {
 
 // Return null if not found
     return null;
-}
-
-function updateDifficulty(){
-    let sliderValue = document.getElementById("difficultySP-slider").value;
-    
-
-    switch(sliderValue) {
-        case "1":
-          document.getElementById("difficulty-display").innerHTML = "EASY";
-          break;
-        case "2":
-          document.getElementById("difficulty-display").innerHTML = "MEDIUM";
-          break;
-        case "3":
-          document.getElementById("difficulty-display").innerHTML = "HARD";
-          break;
-        default:
-          document.getElementById("difficulty-display").innerHTML = "EASY";
-      }
 }

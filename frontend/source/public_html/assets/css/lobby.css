@@ -89,6 +89,7 @@ nav li a:hover {
 }
 
 .launchButton{
+    cursor: pointer;
     position: absolute;
     right: 0;
     bottom: 0;

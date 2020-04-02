@@ -63,6 +63,13 @@ function login() {
                 document.cookie = `token=${data["token"]}`;
                 document.cookie = `user=${data["player"]["nickName"]}`;
 
+                //store this information to prevent people from skipping to lobby.html
+                sessionStorage.setItem("AuthenticationState", "Authenticated");
+
+                //expire key in 1hour
+                sessionStorage.setItem("AuthenticationExpires", Date.now.addHours(1));
+
+                //if all done refresh
                 window.location.href = "lobby.html";
             })
             .catch(err => {
@@ -141,6 +148,12 @@ function signup(){
     //should always be last
     return false;
 }
+
+//add houres to date
+Date.prototype.addHours = function (h) {
+    this.setTime(this.getTime() + (h*60*60*1000));
+    return this;
+};
 
 //work with cookie function
 function getCookie(name) {
