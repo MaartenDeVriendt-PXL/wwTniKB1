@@ -3,6 +3,10 @@
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
+
+TO-DO:
+    Start button -> default config
+    Opties: Singleplayer/Mutliplayer/group-mode -> gaat naar wachtkamer
 -->
 <html>
 
@@ -21,22 +25,73 @@ and open the template in the editor.
         </div>
         <ul>
             <li id="username"></li>
+            <li><a href="#sp">Singleplayer</a></li>
+            <li><a href="#mp">Mutliplayer</a></li>
+            <li><a href="#gm">Party</a></li>
             <li><a href="#">Logout</a></li>
         </ul>
     </nav>
     <div class="container">
-        <div class="form">
-            <form class="play-form" onsubmit="">
-                <input type="submit" class="btn" id="play_btn" value="START - Singleplayer" />
-            </form>
-            <form class="play-form" onsubmit="">
-                <input type="submit" class="btn" id="play_btn" value="START - Multiplayer" />
-            </form>
-            <form class="play-form" onsubmit="">
-                <input type="submit" class="btn" id="play_btn" value="START - Group" />
-            </form>
+        <div class="modes">
+            <div class="info">
+                <div class="box">
+                    <div class="sp-info">
+                        <h2>SINGLEPLAYER</h2><br><br>
+                        <p>
+                            The Singleplayer mode is best for new players or for those who have no friends.<br>
+                            <strong>In this mode you will be taking on the computer in a 1 on 1 battle!</strong><br><br>
+                            <p>
+                                New players can start of slow with the easy difficulty to learn how to play<br> while
+                                more expierenced players can check out the medium mode.<br>
+                                Looking for a challenge? Try out our hard mode.
+                            </p>
+                        </p>
+                        <br><br>
+                        <p>
+                            Choose your difficulty
+                            <br>
+                            <input id="difficultySP-slider" type="range" min="1" value="1" max="3"
+                                onchange="updateDifficulty()" />
+                            <p id="difficulty-display">EASY</p>
+                        </p>
+                        <br><br><br>
+                        <div class="img">
+                            <img id="difficulty-image" src="image/boat.svg" height="100%" width="100%">
+                        </div>
+                        <div class="launchButton"> LAUNCH SINGLEPLAYER</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <footer>
+        <div class="footer">
+            <div class="contact">
+                <h3>SAILORS 71</h3><br>
+                <p>
+                    Maarten Bruyninx <br><br>
+                    Koen Gielissen <br><br>
+                    Wout Brugmans
+                </p>
+            </div>
+            <div class="links">
+                <h3>LINKS</h3><br>
+                <p>
+                    <a href="https://github.com/adagiomzr/wwTniKB1">Github</a>
+                </p>
+            </div>   
+            <div class="about">
+                <h3>ABOUT US</h3><br>
+                <p>
+                    Sailors 71 - Battleships, is a project given by PXL Hasselt <br><br>
+                    The game is based on the classic: Battleships.
+                </p>
+            </div>       
+        </div> 
+        <div class="copy">
+            copyright &copy 2020 Sailors 71 - All rights reserved
+        </div>
+    </footer>
 </body>
 
 </html>

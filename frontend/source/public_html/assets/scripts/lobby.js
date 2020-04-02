@@ -28,3 +28,22 @@ function getCookie(name) {
 // Return null if not found
     return null;
 }
+
+function updateDifficulty(){
+    let sliderValue = document.getElementById("difficultySP-slider").value;
+    
+
+    switch(sliderValue) {
+        case "1":
+          document.getElementById("difficulty-display").innerHTML = "EASY";
+          break;
+        case "2":
+          document.getElementById("difficulty-display").innerHTML = "MEDIUM";
+          break;
+        case "3":
+          document.getElementById("difficulty-display").innerHTML = "HARD";
+          break;
+        default:
+          document.getElementById("difficulty-display").innerHTML = "EASY";
+      }
+}

@@ -8,7 +8,7 @@
 }
 
 .container{
-    background: #3586ff;
+    background: #A3D9FF;
     overflow: hidden;
     
     display: flex;
@@ -49,7 +49,7 @@
 .form .btn {
     text-transform: uppercase;
     outline: 0;
-    background: #8CAFEA;
+    background: #77B6EA;
     width: 100%;
     border: 0;
     padding: 15px;
@@ -59,7 +59,7 @@
 }
 
 .form .btn:hover,.form .btn:active,.form .btn:focus {
-    background: #386FA4;
+    background: #577399;
 }
 
 .form .message, .error, .confirmation{
@@ -69,7 +69,7 @@
 }
 
 .form .message a {
-    color: #386FA4;
+    color: #577399;
     text-decoration: none;
     cursor: pointer;
 }
