@@ -7,4 +7,8 @@ window.onload = function () {
     else if (Date.now > new Date(sessionStorage.getItem('AuthenticationExpires'))) {
         window.location.href = "accesdenied.html";
     }
-}
+    //but also check if player in lobby has a game-id
+    if(sessionStorage.getItem('gameID') === null) {
+        window.location.href = "lobby.html";
+    }
+};
