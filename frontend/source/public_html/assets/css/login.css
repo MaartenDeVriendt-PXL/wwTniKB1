@@ -5,10 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    cursor: default;
 }
 
 .container{
-    background: #A3D9FF;
+    background: #24293d;
     overflow: hidden;
     
     display: flex;
@@ -27,49 +29,69 @@
 .form{
     position: relative;
     z-index: 1;
-    background: #FFFFFF;
-    max-width: 360px;
+    background-color: rgba(37, 60, 120, 0.075);
+    max-width: 450px;
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .form input {
     outline: 0;
-    background: #f2f2f2;
     width: 100%;
     border: 0;
     margin: 0 0 15px;
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 0.7; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+    opacity: 0.7;
+  }
+
+
+
 .form .btn {
+    margin-top: 25px;
     text-transform: uppercase;
     outline: 0;
-    background: #77B6EA;
+    background: #355691;
     width: 100%;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
     font-size: 14px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .form .btn:hover,.form .btn:active,.form .btn:focus {
-    background: #577399;
+    background: #253C78;
 }
 
 .form .message, .error, .confirmation{
     margin: 15px 0 0;
-    color: #b3b3b3;
+    color: #FFFFFF;
+    opacity: 0.8;
     font-size: 12px;
 }
 
 .form .message a {
-    color: #577399;
+    color: #5CC8FF;
     text-decoration: none;
     cursor: pointer;
 }
@@ -92,29 +114,30 @@ section .wave {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 40px;
     background: url(../../image/wave.png);
     background-size: 1000px 60px;
 }
 
 section .wave.wave1 {
-    animation: animate 40s linear infinite;
+    animation: animate 35s linear infinite;
     z-index: 1000;
     opacity: 1;
     animation-delay: 0s;
     bottom: 0;
+    opacity: 0.2;
 }
 
 section .wave.wave2 {
-    animation: animate2 25s linear infinite;
+    animation: animate2 205s linear infinite;
     z-index: 999;
-    opacity: 0.5;
+    opacity: 0.3;
     animation-delay: -5s;
     bottom: 0;
 }
 
 section .wave.wave3 {
-    animation: animate3 25s linear infinite;
+    animation: animate3 20s linear infinite;
     z-index: 998;
     opacity: 0.2;
     animation-delay: -2s;
@@ -122,9 +145,9 @@ section .wave.wave3 {
 }
 
 section .wave.wave4 {
-    animation: animate3 15s linear infinite;
+    animation: animate3 10s linear infinite;
     z-index: 997;
-    opacity: 0.7;
+    opacity: 0.2;
     animation-delay: -5s;
     bottom: 15;
 }
@@ -164,5 +187,38 @@ section .wave.wave4 {
     }
     100% {
         background-position-x: -1000px;
+    }
+}
+
+@media (min-width: 767px){
+    .form{
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+}
+
+@media (max-width: 1024px){
+    *{
+        font-size: 1.1em;
+    }
+
+    h2{
+        font-size: 0.8em;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .menu{
+        padding: 8%;
+    }
+    
+    .form{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .wave{
+        display: none;
     }
 }

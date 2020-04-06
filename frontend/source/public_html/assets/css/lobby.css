@@ -5,32 +5,37 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    cursor: default;
+}
+
+body{
+    background: #24293d;
 }
 
 nav{
     z-index: 1;
     display: flex;
-    justify-content: space-between; /* change to space-around; when adding new links */
+    justify-content: space-around; /* change to space-around; when adding new links */
     align-items: center;
     position: relative;
-    min-height: 8vh;
+    height: 8vh;
     padding-left: 2%;
     padding-right: 2%;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-    background-color: #577399;
     color: white;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    width: 30%;
 }
 
 nav li a{
     text-decoration: none;
     color: white;
+    margin: 50%;
 }
 
 nav li a:hover {
@@ -40,82 +45,86 @@ nav li a:hover {
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: start;
     width: 100%;
-    height: 92vh;
-    background-color: #BDD5EA;
+    min-height: 90vh;
+    background-color: #24293d;
+    padding: 4%;
 }
 
-.modes{
+.sp{
+    align-self: center;
+    width: 70%;
+    position: relative;
+    padding: 2%;
+    margin-bottom: 4%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: rgba(37, 60, 120, 0.075);
+}
+
+.sp h2{
+    margin-bottom: 5px;
+}
+
+.sp h3{
+    opacity: 0.4;
+    margin-bottom: 5%;
+}
+
+.sp h4 {
+    opacity: 0.4;
+}
+
+.sp-difficulties{
+    margin-bottom: 8%;
+    width: 100%;
     padding-top: 5%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ .sp-difficulties div{
+     width: 28%;
+     text-align: center;
+     padding: 5%;
+     border: solid 2px white;
+     display: flex;
+     transition-duration: 0.4s;
+     cursor: pointer;
+ }
+
+ .sp-difficulties p{
+     align-self: center;
+     width: 100%;
+     color: rgb(92, 201, 255);
+ }
+
+.inactive{
+    opacity: 0.4;
 }
 
-.info{
-    align-self: center;
-    
-    margin-bottom: 10%;
-    width:75%;
-    height: 60vh;
-    padding: 2%;
-}
+.active{
+    opacity: 1;
+    background-color: rgba(92, 201, 255, 0.1);
+ }
 
-.box{
-    margin-bottom: 20%;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 2%;
-}
-
-.box p{
-    width: 100%;
-    line-height: 2em;
-   
-}
-
-.sp-info{
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-    width: 100%;
-    padding: 5%;
-    border-radius: 25px;
-    background-color: white;
-    position: relative;
-}
-
-.multi{
-    text-align: right;
-}
-
-.launchButton{
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 4%;
-    margin-right: 7%;
-    padding: 17.5px;
-    font-weight: bold;
-    border-radius: 25px;
+.sp-btn{
     text-align: center;
-    width: 35%;
-    color: white;
-    background-color: #577399;
+    text-transform: uppercase;
+    outline: 0;
+    background: #355691;
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 40%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.launchButton:hover {
-    background-color: #77B6EA;
-}
-
-.img{
-    width: 220px;
-    height: 253px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 2%;
-    margin-right: 15%;
+.sp-btn:hover {
+    background-color: rgb(37, 60, 120);
 }
 
 .sp-icon{
@@ -123,19 +132,17 @@ nav li a:hover {
 }
 
 footer{
-    background-color: #565264;
     width: 100%;
     display: flex;
     flex-direction: column;
     color: white;
+    box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .footer{
-    background-color: #565264;
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: white;
     padding: 5%;
 }
@@ -146,11 +153,6 @@ footer{
     cursor: pointer;
 }
 
-hr{
-    width: 70%;
-    margin-left: 17.5%;
-}
-
 .copy{
     bottom: 0;
     text-align: center;
@@ -159,5 +161,48 @@ hr{
     opacity: 0.6;
 }
 
+@media (min-width: 1025px){
+    .sp-difficulties div:hover{
+        transform: scale(1.075);
+    }
+}
+
+
+@media (max-width: 1024px){
+    .sp{
+        width: 100%;
+        padding: 4%;
+    }
+
+    .sp-difficulties{
+        flex-direction: column;
+    }
+
+    .sp-difficulties div{
+        width: 100%;
+        margin: 2%;
+    }
+
+    h3{
+        font-size: 0.8em;
+    }
+
+    h4{
+        font-size: 0.8em;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer div{
+        margin: 8%;
+        line-height: 1.3em;
+    }
+
+    .copy{
+        font-size: 0.8em;
+    }
+}
 
 

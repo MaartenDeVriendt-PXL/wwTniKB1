@@ -13,6 +13,43 @@ window.onload = function () {
     game.addEventListener("click", () => {
         play();
     })
+
+    let sp_easy = document.getElementById("sp-easy");
+    let sp_medium = document.getElementById("sp-medium");
+    let sp_hard = document.getElementById("sp-hard");
+
+    sp_easy.addEventListener("click", () => {
+        sp_easy.classList.add("active");
+        sp_easy.classList.remove("inactive");
+
+        sp_medium.classList.remove("active");
+        sp_medium.classList.add("inactive");
+
+        sp_hard.classList.remove("active");
+        sp_hard.classList.add("inactive");
+    });
+
+    sp_medium.addEventListener("click", () => {
+        sp_medium.classList.add("active");
+        sp_medium.classList.remove("inactive");
+
+        sp_easy.classList.remove("active");
+        sp_easy.classList.add("inactive");
+
+        sp_hard.classList.remove("active");
+        sp_hard.classList.add("inactive");
+    });
+
+    sp_hard.addEventListener("click", () => {
+        sp_hard.classList.add("active");
+        sp_hard.classList.remove("inactive");
+
+        sp_easy.classList.remove("active");
+        sp_easy.classList.add("inactive");
+
+        sp_medium.classList.remove("active");
+        sp_medium.classList.add("inactive");
+    });
 };
 
 function play() {
@@ -54,23 +91,4 @@ function play() {
             throw new Error(`"game error, ${err.toString()}"`);
         });
 
-}
-
-function updateDifficulty() {
-    let sliderValue = document.getElementById("difficultySP-slider").value;
-
-    //change difficulty
-    switch (sliderValue) {
-        case "1":
-            document.getElementById("difficulty-display").innerHTML = "EASY";
-            break;
-        case "2":
-            document.getElementById("difficulty-display").innerHTML = "MEDIUM";
-            break;
-        case "3":
-            document.getElementById("difficulty-display").innerHTML = "HARD";
-            break;
-        default:
-            document.getElementById("difficulty-display").innerHTML = "EASY";
-    }
 }
